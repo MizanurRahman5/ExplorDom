@@ -10,6 +10,7 @@
         <h1>This is Bangladesh</h1>
     </header>
     <main>
+       <section>
         <h1>Milstone 5 Tour Of Dom</h1>
         <ul>
             <li>Home</li>
@@ -17,6 +18,24 @@
             <li>About</li>
             <li>LogIn</li>
         </ul>
+       </section>
+       <section>
+        <h1 id="fruits">My fruits list</h1>
+        <ul>
+            <li>Banana</li>
+            <li>Orange</li>
+            <li>Apple</li>
+        </ul>
+       </section>
+       <section>
+        <h1 id="tour-list">My Tour list</h1>
+        <ul>
+            <li class="important-places">Modhutila</li>
+            <li class="important-places">Bandarban</li>
+            <li class="important-places">Sundarban</li>
+            <li>Sajek</li>
+        </ul>
+       </section>
     </main>
     <footer>
         <script src="/js/dom.js"></script>
@@ -24,14 +43,22 @@
             const liCollection = document.getElementsByTagName('li');
             // console.log(liCollection);
             for (const li of liCollection){
-                console.log(li.innerText);
+                // console.log(li.innerText);
             }
 
             const header = document.getElementsByTagName('h1');
             // console.log(header);
             for (const h1 of header){
-                console.log(h1.innerText)
+                // console.log(h1.innerText)
             }
+
+            const places = document.getElementsByClassName('important-places')
+            // console.log(places)
+            for (const place of places){
+                console.log(place.innerHTML)
+                place.style.color = 'red';
+            }
+
         </script>
     </footer>
 </body>
