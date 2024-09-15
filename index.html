@@ -20,6 +20,19 @@
     </main>
     <footer>
         <script src="/js/dom.js"></script>
+        <script>
+            const liCollection = document.getElementsByTagName('li');
+            // console.log(liCollection);
+            for (const li of liCollection){
+                console.log(li.innerText);
+            }
+
+            const header = document.getElementsByTagName('h1');
+            // console.log(header);
+            for (const h1 of header){
+                console.log(h1.innerText)
+            }
+        </script>
     </footer>
 </body>
 </html>
